@@ -1,0 +1,11 @@
+{{!< default}}
+{{!-- inject everything in this file into the {body} of default.hbs --}}
+<div class="content flex-grow flex-col justify-content-center">
+  <div class="container home-description">
+    {{#if @site.logo}}
+      <img class="header-logo" src="{{@site.logo}}" />
+    {{/if}}
+    <p>{{@site.description}}</p>
+    <p><a href="/help" class="btn btn-primary" role="button">Learn more</a></p>
+  </div>
+</div>

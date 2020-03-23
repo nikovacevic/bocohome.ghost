@@ -1,0 +1,9 @@
+{{!< default}}
+{{!-- inject everything in this file into the {body} of default.hbs --}}
+
+{{!-- pull data from the post --}}
+{{#post}}
+<article class="{{post_class}} container">
+  {{content}}
+</article>
+{{/post}}

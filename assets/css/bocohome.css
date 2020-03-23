@@ -1,0 +1,227 @@
+html {
+    background-color: rgb(240, 240, 240);
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column;
+    min-height: 100%;
+}
+
+body {
+    box-sizing: border-box;
+    display: flex;
+    flex: 1 0 auto;
+    flex-flow: column;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Droid Sans, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin: 0;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    overflow-x: hidden;
+}
+
+main {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+footer {
+    padding: 2em;
+    text-align: center;
+}
+
+h2.site-title {
+    text-align: center;
+    padding-top: 1em;
+}
+
+nav.nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav.nav ul li a {
+    display: inline-block;
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+nav.nav ul li.nav-current a {
+    box-shadow: inset 0 -0.2em 0 #007bff
+}
+
+nav.nav ul li a:hover {
+    color: #0056b3;
+    text-decoration: none;
+    box-shadow: inset 0 -0.2em 0 #0056b3
+}
+
+.home-description {
+    justify-content: center;
+    padding-bottom: 4em;
+    text-align: center;
+}
+
+.flex-col {
+    display: flex;
+    flex-flow: column;
+}
+.flex-grow {
+    flex: 1 0 auto;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article h1,
+article h2,
+article h3,
+article p,
+article ul {
+    width: 100%;
+}
+
+article h2:not(:first-child),
+article h3:not(:first-child) {
+    margin-top: 1em;
+}
+
+article .content {
+    width: 100%;
+}
+
+article img {
+    display: block;
+    max-width: 100%;
+}
+
+.kg-width-wide img {
+    max-width: 85vw;
+}
+
+.kg-width-full img {
+    max-width: 100vw;
+}
+
+article figure {
+    margin: 0;
+    margin-bottom: 1em;
+}
+
+article figcaption {
+    text-align: center;
+}
+
+.kg-gallery-container {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5em auto;
+    max-width: 1040px;
+    width: 100vw;
+}
+
+.kg-gallery-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.kg-gallery-image img {
+    display: block;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.kg-gallery-row:not(:first-of-type) {
+    margin: 0.75em 0 0 0;
+}
+
+.kg-gallery-image:not(:first-of-type) {
+    margin: 0 0 0 0.75em;
+}
+
+.kg-bookmark-card {
+    width: 100%;
+    position: relative;
+}
+
+.kg-bookmark-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    color: currentColor;
+    font-family: inherit;
+    text-decoration: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.kg-bookmark-container:hover {
+    text-decoration: none;
+}
+
+.kg-bookmark-content {
+    flex-basis: 0;
+    flex-grow: 999;
+    padding: 20px;
+    order: 1;
+}
+
+.kg-bookmark-title {
+    font-weight: 600;
+}
+
+.kg-bookmark-metadata,
+.kg-bookmark-description {
+    margin-top: .5em;
+}
+
+.kg-bookmark-metadata {
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.kg-bookmark-description {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.kg-bookmark-icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    vertical-align: text-bottom;
+    margin-right: .5em;
+    margin-bottom: .05em;
+}
+
+.kg-bookmark-thumbnail {
+    display: flex;
+    flex-basis: 24rem;
+    flex-grow: 1;
+}
+
+.kg-bookmark-thumbnail img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+    object-fit: cover;
+}
+
+.kg-bookmark-author {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.kg-bookmark-publisher::before {
+    content: "•";
+    margin: 0 .5em;
+}

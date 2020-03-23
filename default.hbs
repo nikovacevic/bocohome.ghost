@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="{{asset "css/bootstrap.min.css"}}" />
+  <link rel="stylesheet" type="text/css" href="{{asset "css/fa.min.css"}}" />
+  <link rel="stylesheet" type="text/css" href="{{asset "css/bocohome.css"}}" />
+  <title>{{meta_title}}</title>
+  {{ghost_head}}
+</head>
+<body class="{{body_class}}">
+  <div class="container flex-grow flex-col">
+    {{> header }}
+    <main role="main" class="flex-grow flex-col">
+      {{!-- Main content injected here; e.g. index.hbs, post.hbs, etc. --}}
+      {{{body}}}
+    </main>
+    {{> footer }}
+  </div>
+  {{!-- The #block helper will pull in data from the #contentFor other template files. --}}
+  {{{block "scripts"}}}
+  {{!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag --}}
+  {{ghost_foot}}
+</body>
+</html>
